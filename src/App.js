@@ -8,19 +8,22 @@ const App = () => {
 
   const controller = () => {
     if(curValue === 1){
-      chngstring(string = "hello");
+      chngstring(string = "About Me");
     }
 
     if(curValue === 2){
-      chngstring(string = "andulag");
+      chngstring(string = "Education");
     }
 
     if(curValue === 3){
-      chngstring(string = "dami");
+      chngstring(string = "Work");
     }
 
     if(curValue === 4){
-      chngstring(string = "tobi");
+      chngstring(string = "Projects");
+    }
+    if(curValue === 5){
+      chngstring(string = "More");
     }
 }
 
@@ -37,11 +40,16 @@ useEffect(() => {
   return (
     <div className="App">
       <header className="App-header"> 
-          <ul>
-              <li onClick={() => chngValue(curValue = 2)} >lol</li>
-              <li onClick={() => chngValue(curValue = 3)}>tobi</li>
-              <li onClick={() => chngValue(curValue = 4)}>hey</li>
-          </ul>
+          <div><h3>Anurag Bisht</h3></div>
+          <div> 
+            <ul>
+                <li onClick={() => chngValue(curValue = 1)}>About Me </li>
+                <li onClick={() => chngValue(curValue = 2)}>Education</li>
+                <li onClick={() => chngValue(curValue = 3)}>Work</li>
+                <li onClick={() => chngValue(curValue = 4)}>Projects</li>
+                <li onClick={() => chngValue(curValue = 5)}>More</li>
+            </ul>
+          </div>
       </header>
       <body className = "App-body">
       <p>
